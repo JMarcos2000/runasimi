@@ -18,7 +18,7 @@
 
 ## 3. Autenticación
 
-- [ ] 3.1 Habilitar Email/Password y Google OAuth en Supabase Auth (dashboard)
+- [x] 3.1 Habilitar Email/Password y Google OAuth en Supabase Auth (dashboard)
 - [x] 3.2 Crear `src/hooks/useAuth.ts` con lógica de sesión (login, register, logout, currentUser)
 - [x] 3.3 Crear `src/components/ProtectedRoute.tsx` para rutas privadas
 - [x] 3.4 Crear `src/pages/LoginPage.tsx` con formulario de login y botón Google
@@ -42,6 +42,6 @@
 ## 6. CI/CD y deploy
 
 - [x] 6.1 Crear `.github/workflows/ci.yml` con jobs de lint y build
-- [ ] 6.2 Conectar repositorio GitHub a Vercel (dashboard web)
-- [ ] 6.3 Agregar variables de entorno `VITE_SUPABASE_URL` y `VITE_SUPABASE_ANON_KEY` en Vercel
-- [ ] 6.4 Verificar que el deploy automático funciona haciendo un push a main
+- [x] 6.2 Conectar repositorio GitHub a Vercel (dashboard web)
+- [x] 6.3 Agregar variables de entorno `VITE_SUPABASE_URL` y `VITE_SUPABASE_ANON_KEY` en Vercel
+- [x] 6.4 Verificar que el deploy automático funciona haciendo un push a main
