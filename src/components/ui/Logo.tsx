@@ -10,45 +10,43 @@ export function Logo({ size = 64, color = '#FF6B35' }: LogoProps) {
       className="flex items-center justify-center"
     >
       <svg
-        width={size * 0.72}
-        height={size * 0.72}
-        viewBox="0 0 60 70"
+        width={size * 0.78}
+        height={size * 0.78}
+        viewBox="0 0 80 96"
         fill="white"
       >
-        {/* Body */}
-        <ellipse cx="26" cy="46" rx="21" ry="13" />
+        {/* Cuerpo */}
+        <polygon points="8,42 8,68 65,68 65,42 57,36 15,36" />
 
-        {/* Neck */}
-        <path d="M33 35 C35 27 39 21 41 17 L46 19 C44 23 40 29 38 37 Z" />
+        {/* Cuello */}
+        <polygon points="47,36 47,18 57,15 62,36" />
 
-        {/* Head */}
-        <ellipse cx="45" cy="14" rx="7" ry="5.5" transform="rotate(-10 45 14)" />
+        {/* Cabeza */}
+        <polygon points="48,18 48,10 65,10 68,18 62,22 52,22" />
 
-        {/* Ears */}
-        <polygon points="39,10 41,3 44,10" />
-        <polygon points="45,9 47,2 50,9" />
+        {/* Oreja izquierda */}
+        <polygon points="50,10 53,3 57,10" />
 
-        {/* Snout bump */}
-        <ellipse cx="51" cy="17" rx="3" ry="2" transform="rotate(-10 51 17)" />
+        {/* Oreja derecha */}
+        <polygon points="61,10 64,3 67,10" />
 
-        {/* Eye */}
-        <circle cx="46" cy="13" r="1.2" fill={color} />
+        {/* Hocico angular */}
+        <rect x="62" y="14" width="8" height="7" />
 
-        {/* Front legs */}
-        <rect x="37" y="57" width="6" height="11" rx="3" />
-        <rect x="29" y="57" width="6" height="11" rx="3" />
+        {/* Ojo (corte en fondo) */}
+        <rect x="57" y="12" width="4" height="4" fill={color} />
 
-        {/* Back legs */}
-        <rect x="11" y="57" width="6" height="11" rx="3" />
-        <rect x="3" y="57" width="6" height="11" rx="3" />
+        {/* Cola angular */}
+        <polygon points="8,42 3,38 3,53 8,56" />
 
-        {/* Tail */}
-        <ellipse cx="5" cy="43" rx="4" ry="6" transform="rotate(20 5 43)" />
+        {/* Patas */}
+        <rect x="10" y="67" width="9" height="18" />
+        <rect x="23" y="67" width="9" height="18" />
+        <rect x="42" y="67" width="9" height="18" />
+        <rect x="55" y="67" width="9" height="18" />
 
-        {/* Andean geometric pattern — rombos (cutouts del color del fondo) */}
-        <polygon points="26,38 30,43 26,48 22,43" fill={color} />
-        <polygon points="17,44 20,47 17,50 14,47" fill={color} opacity="0.7" />
-        <polygon points="34,43 36.5,45.5 34,48 31.5,45.5" fill={color} opacity="0.7" />
+        {/* Rombo central andino */}
+        <polygon points="33,44 41,51 33,58 25,51" fill={color} />
       </svg>
     </div>
   )
