@@ -10,43 +10,43 @@ export function Logo({ size = 64, color = '#FF6B35' }: LogoProps) {
       className="flex items-center justify-center"
     >
       <svg
-        width={size * 0.78}
-        height={size * 0.78}
-        viewBox="0 0 80 96"
+        width={size * 0.72}
+        height={size * 0.72}
+        viewBox="0 0 80 80"
         fill="white"
       >
         {/* Cuerpo */}
-        <polygon points="8,42 8,68 65,68 65,42 57,36 15,36" />
+        <polygon points="8,38 8,60 65,60 65,38 57,32 15,32" />
 
         {/* Cuello */}
-        <polygon points="47,36 47,18 57,15 62,36" />
+        <polygon points="47,32 47,16 57,13 62,32" />
 
         {/* Cabeza */}
-        <polygon points="48,18 48,10 65,10 68,18 62,22 52,22" />
+        <polygon points="48,16 48,8 65,8 68,16 62,20 52,20" />
 
         {/* Oreja izquierda */}
-        <polygon points="50,10 53,3 57,10" />
+        <polygon points="50,8 53,2 57,8" />
 
         {/* Oreja derecha */}
-        <polygon points="61,10 64,3 67,10" />
+        <polygon points="61,8 64,2 67,8" />
 
-        {/* Hocico angular */}
-        <rect x="62" y="14" width="8" height="7" />
+        {/* Hocico */}
+        <rect x="62" y="12" width="8" height="7" />
 
-        {/* Ojo (corte en fondo) */}
-        <rect x="57" y="12" width="4" height="4" fill={color} />
+        {/* Ojo */}
+        <rect x="57" y="11" width="4" height="4" fill={color} />
 
-        {/* Cola angular */}
-        <polygon points="8,42 3,38 3,53 8,56" />
+        {/* Cola */}
+        <polygon points="8,38 3,34 3,48 8,51" />
 
         {/* Patas */}
-        <rect x="10" y="67" width="9" height="18" />
-        <rect x="23" y="67" width="9" height="18" />
-        <rect x="42" y="67" width="9" height="18" />
-        <rect x="55" y="67" width="9" height="18" />
+        <rect x="10" y="59" width="9" height="16" />
+        <rect x="23" y="59" width="9" height="16" />
+        <rect x="42" y="59" width="9" height="16" />
+        <rect x="55" y="59" width="9" height="16" />
 
         {/* Rombo central andino */}
-        <polygon points="33,44 41,51 33,58 25,51" fill={color} />
+        <polygon points="33,40 41,47 33,54 25,47" fill={color} />
       </svg>
     </div>
   )
