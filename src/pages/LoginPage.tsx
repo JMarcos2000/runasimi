@@ -19,7 +19,7 @@ export function LoginPage() {
     if (error) {
       setError('Email o contraseña incorrectos')
     } else {
-      navigate('/dashboard')
+      navigate('/inicio')
     }
     setLoading(false)
   }

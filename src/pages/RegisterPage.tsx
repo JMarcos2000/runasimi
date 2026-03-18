@@ -21,7 +21,7 @@ export function RegisterPage() {
     if (error) {
       setError(error.message.includes('already') ? 'Este email ya está registrado' : error.message)
     } else {
-      navigate('/dashboard')
+      navigate('/inicio')
     }
     setLoading(false)
   }
