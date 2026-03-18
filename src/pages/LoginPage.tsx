@@ -31,7 +31,7 @@ export function LoginPage() {
         <Logo size={72} />
         <h1 className="text-3xl font-bold text-quechua-text-primary">Runasimi</h1>
         <p className="text-sm text-quechua-text-secondary text-center max-w-xs">
-          Aprendé Runasimi, conectá con tus raíces
+          Aprendé quechua, conectá con tus raíces andinas
         </p>
       </div>
 
