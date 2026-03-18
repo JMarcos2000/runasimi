@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { LoginPage } from './pages/LoginPage'
 import { RegisterPage } from './pages/RegisterPage'
 import { InicioPage } from './pages/InicioPage'
+import { LessonPage } from './pages/LessonPage'
 import { ProfilePage } from './pages/ProfilePage'
 import { ProtectedRoute } from './components/ProtectedRoute'
 
@@ -16,6 +17,14 @@ function App() {
           element={
             <ProtectedRoute>
               <InicioPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/lesson/:id"
+          element={
+            <ProtectedRoute>
+              <LessonPage />
             </ProtectedRoute>
           }
         />
