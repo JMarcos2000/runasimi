@@ -1,3 +1,6 @@
+# Contexto local (credenciales y datos operativos)
+PROYECTO.md
+
 # Logs
 logs
 *.log
@@ -22,3 +25,4 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.vercel

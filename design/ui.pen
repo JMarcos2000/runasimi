@@ -1,0 +1,41 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "pn5mA",
+      "x": 100,
+      "y": 100,
+      "name": "Logo",
+      "clip": true,
+      "width": 94,
+      "height": 94,
+      "fill": "#FF6B35",
+      "cornerRadius": 22,
+      "layout": "none",
+      "children": [
+        {
+          "type": "path",
+          "id": "MEzQ0",
+          "x": 0,
+          "y": 0,
+          "name": "llamaV2",
+          "geometry": "M52 4l6 8 16 0 4 6-2 6-10 4-8 6-4 4 0 20-2 0 0 18-8 0 0-18-2 0 0 18-8 0 0-18-12 0 0 18-8 0 0-18-2 0 0 18-8 0 0-18 0-20 20 0 22-26 0-6z",
+          "fill": "#FFFFFF",
+          "width": 80,
+          "height": 80
+        },
+        {
+          "type": "rectangle",
+          "id": "iUZDK",
+          "x": 62,
+          "y": 20,
+          "name": "llamaEye",
+          "fill": "#FF6B35",
+          "width": 4,
+          "height": 4
+        }
+      ]
+    }
+  ]
+}
