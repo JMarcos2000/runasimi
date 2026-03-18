@@ -3,6 +3,7 @@ import { LoginPage } from './pages/LoginPage'
 import { RegisterPage } from './pages/RegisterPage'
 import { InicioPage } from './pages/InicioPage'
 import { LessonPage } from './pages/LessonPage'
+import { ExercisePage } from './pages/ExercisePage'
 import { ProfilePage } from './pages/ProfilePage'
 import { ProtectedRoute } from './components/ProtectedRoute'
 
@@ -25,6 +26,14 @@ function App() {
           element={
             <ProtectedRoute>
               <LessonPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/lesson/:id/ejercicios"
+          element={
+            <ProtectedRoute>
+              <ExercisePage />
             </ProtectedRoute>
           }
         />

@@ -2,15 +2,12 @@ import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
 import { useAuth } from '../hooks/useAuth'
-import { useLessonComplete } from '../hooks/useLessonComplete'
 import type { Lesson } from '../types'
 
 export function LessonPage() {
   const { id } = useParams<{ id: string }>()
   const { user } = useAuth()
   const navigate = useNavigate()
-  const { completeLesson, loading: completing } = useLessonComplete()
-
   const [lesson, setLesson] = useState<Lesson | null>(null)
   const [alreadyCompleted, setAlreadyCompleted] = useState(false)
   const [loading, setLoading] = useState(true)
@@ -37,10 +34,8 @@ export function LessonPage() {
     fetchLesson()
   }, [id, user])
 
-  const handleComplete = async () => {
-    if (!id || !user) return
-    await completeLesson(id, user.id)
-    navigate('/inicio')
+  const handleComplete = () => {
+    navigate(`/lesson/${id}/ejercicios`)
   }
 
   if (loading) {
@@ -122,10 +117,10 @@ export function LessonPage() {
         {/* Botón completar */}
         <button
           onClick={handleComplete}
-          disabled={alreadyCompleted || completing}
+          disabled={alreadyCompleted}
           className="w-full h-14 rounded-2xl bg-quechua-primary text-white text-base font-bold disabled:opacity-50 transition-opacity mt-2"
         >
-          {alreadyCompleted ? 'Ya completada ✓' : completing ? 'Guardando...' : 'Completar lección'}
+          {alreadyCompleted ? 'Ya completada ✓' : 'Iniciar ejercicios'}
         </button>
       </div>
     </div>

@@ -4,13 +4,13 @@ import { supabase } from '../lib/supabase'
 export function useLessonComplete() {
   const [loading, setLoading] = useState(false)
 
-  async function completeLesson(lessonId: string, userId: string): Promise<void> {
+  async function completeLesson(lessonId: string, userId: string, score = 100): Promise<void> {
     setLoading(true)
 
     const today = new Date().toISOString().split('T')[0]
 
     await supabase.from('user_progress').upsert(
-      { user_id: userId, lesson_id: lessonId, completed: true, score: 100 },
+      { user_id: userId, lesson_id: lessonId, completed: true, score },
       { onConflict: 'user_id,lesson_id' }
     )
 
