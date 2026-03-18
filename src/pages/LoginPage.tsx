@@ -29,7 +29,7 @@ export function LoginPage() {
       {/* Hero */}
       <div className="flex flex-col items-center gap-3 mb-10">
         <Logo size={72} />
-        <h1 className="text-3xl font-bold text-quechua-text-primary">Quechua App</h1>
+        <h1 className="text-3xl font-bold text-quechua-text-primary">Runasimi</h1>
         <p className="text-sm text-quechua-text-secondary text-center max-w-xs">
           Aprende Quechua, conectá con tus raíces
         </p>
