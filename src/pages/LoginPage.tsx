@@ -33,6 +33,7 @@ export function LoginPage() {
         <p className="text-sm text-quechua-text-secondary text-center max-w-xs">
           Aprendé quechua, conectá con tus raíces andinas
         </p>
+        <p className="text-xs text-quechua-primary font-bold">PRUEBA DE DEPLOY AUTOMATICO</p>
       </div>
 
       {/* Form */}
