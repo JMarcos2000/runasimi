@@ -18,3 +18,7 @@
 - [x] 3.4 Agregar card de frase del día desde `currentDayLesson.phrase_of_day`
 - [x] 3.5 Agregar botón "Continuar lección" → `/lesson/${currentDayLesson?.id}`
 - [x] 3.6 Agregar botón "Repasar vocabulario" → `/repaso`
+
+## 4. Mejora de UI
+
+- [ ] 4.1 Revisar y mejorar el diseño visual de la pantalla Inicio
