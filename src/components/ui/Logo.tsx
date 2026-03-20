@@ -10,43 +10,41 @@ export function Logo({ size = 64, color = '#FF6B35' }: LogoProps) {
       className="flex items-center justify-center"
     >
       <svg
-        width={size * 0.72}
-        height={size * 0.72}
-        viewBox="0 0 80 80"
-        fill="white"
+        width={size * 0.86}
+        height={size * 0.86}
+        viewBox="0 0 100 100"
+        fill="none"
+        stroke="white"
+        strokeWidth="3"
+        strokeLinejoin="miter"
+        strokeLinecap="square"
       >
-        {/* Cuerpo */}
-        <polygon points="8,38 8,60 65,60 65,38 57,32 15,32" />
+        {/* Body */}
+        <polygon points="18,47 22,42 56,42 64,42 64,47 62,68 18,68" />
 
-        {/* Cuello */}
-        <polygon points="47,32 47,16 57,13 62,32" />
+        {/* Neck */}
+        <polygon points="56,42 64,42 74,20 66,20" />
 
-        {/* Cabeza */}
-        <polygon points="48,16 48,8 65,8 68,16 62,20 52,20" />
+        {/* Head */}
+        <rect x="64" y="10" width="20" height="14" />
 
-        {/* Oreja izquierda */}
-        <polygon points="50,8 53,2 57,8" />
+        {/* Ear */}
+        <polygon points="68,10 70,4 75,10" />
 
-        {/* Oreja derecha */}
-        <polygon points="61,8 64,2 67,8" />
+        {/* Tail */}
+        <path d="M18,50 L11,47 L10,54 L14,59 L18,59" />
 
-        {/* Hocico */}
-        <rect x="62" y="12" width="8" height="7" />
+        {/* Back-left leg */}
+        <rect x="17" y="68" width="9" height="22" />
+        {/* Back-right leg */}
+        <rect x="29" y="68" width="9" height="22" />
+        {/* Front-left leg */}
+        <rect x="43" y="68" width="9" height="22" />
+        {/* Front-right leg */}
+        <rect x="53" y="68" width="9" height="22" />
 
-        {/* Ojo */}
-        <rect x="57" y="11" width="4" height="4" fill={color} />
-
-        {/* Cola */}
-        <polygon points="8,38 3,34 3,48 8,51" />
-
-        {/* Patas */}
-        <rect x="10" y="59" width="9" height="16" />
-        <rect x="23" y="59" width="9" height="16" />
-        <rect x="42" y="59" width="9" height="16" />
-        <rect x="55" y="59" width="9" height="16" />
-
-        {/* Rombo central andino */}
-        <polygon points="33,40 41,47 33,54 25,47" fill={color} />
+        {/* Square spiral ornament (pre-Columbian style) */}
+        <polyline points="28,46 50,46 50,64 28,64 28,48 48,48 48,62 30,62 30,50 46,50 46,60 32,60 32,52 44,52" />
       </svg>
     </div>
   )
