@@ -53,11 +53,11 @@ export function FeatureCarousel() {
       onMouseUp={e => handleDragEnd(e.clientX)}
     >
       {/* Slide */}
-      <div className="bg-white/15 rounded-3xl px-6 py-5 flex items-center gap-4 min-h-[88px]">
+      <div className="bg-quechua-surface border border-quechua-border rounded-3xl px-6 py-5 flex items-center gap-4 min-h-[88px]">
         <span className="text-4xl">{slides[activeIndex].icon}</span>
         <div>
-          <p className="text-white font-bold text-base leading-tight">{slides[activeIndex].title}</p>
-          <p className="text-white/80 text-sm mt-0.5">{slides[activeIndex].subtitle}</p>
+          <p className="text-quechua-text-primary font-bold text-base leading-tight">{slides[activeIndex].title}</p>
+          <p className="text-quechua-text-secondary text-sm mt-0.5">{slides[activeIndex].subtitle}</p>
         </div>
       </div>
 
@@ -68,7 +68,7 @@ export function FeatureCarousel() {
             key={i}
             onClick={() => goTo(i)}
             className={`h-2 rounded-full transition-all duration-300 ${
-              i === activeIndex ? 'w-6 bg-white' : 'w-2 bg-white/40'
+              i === activeIndex ? 'w-6 bg-quechua-primary' : 'w-2 bg-quechua-border'
             }`}
           />
         ))}
