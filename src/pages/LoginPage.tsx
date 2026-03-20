@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth'
 import { Logo } from '../components/ui/Logo'
+import { FeatureCarousel } from '../components/ui/FeatureCarousel'
 
 export function LoginPage() {
   const { login, loginWithGoogle } = useAuth()
@@ -25,14 +26,19 @@ export function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-quechua-background flex flex-col items-center justify-center px-6">
+    <div className="min-h-screen bg-quechua-background flex flex-col items-center justify-center px-6 py-10">
       {/* Hero */}
-      <div className="flex flex-col items-center gap-3 mb-10">
+      <div className="flex flex-col items-center gap-3 mb-8">
         <Logo size={72} />
         <h1 className="text-3xl font-bold text-quechua-text-primary">Runasimi</h1>
         <p className="text-sm text-quechua-text-secondary text-center max-w-xs">
           Aprendé quechua, conectá con tus raíces andinas
         </p>
+      </div>
+
+      {/* Carrusel */}
+      <div className="w-full max-w-sm mb-8">
+        <FeatureCarousel />
       </div>
 
       {/* Form */}

@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'login-bg': '#C17520',
         quechua: {
           primary: '#FF6B35',
           secondary: '#2EC4B6',

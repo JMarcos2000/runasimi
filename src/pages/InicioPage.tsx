@@ -28,7 +28,7 @@ export function InicioPage() {
       </div>
 
       {/* Content */}
-      <div className="px-5 pt-6 pb-8 flex flex-col gap-5">
+      <div className="px-5 pt-6 pb-8 flex flex-col gap-5 max-w-sm mx-auto">
         {/* Nivel y progreso */}
         <div className="bg-quechua-surface border border-quechua-border rounded-2xl px-5 py-4 flex flex-col gap-3">
           <div className="flex items-center justify-between">

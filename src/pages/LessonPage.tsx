@@ -77,7 +77,7 @@ export function LessonPage() {
       </div>
 
       {/* Content */}
-      <div className="px-5 pt-6 pb-8 flex flex-col gap-5">
+      <div className="px-5 pt-6 pb-8 flex flex-col gap-5 max-w-sm mx-auto">
         {/* Ejemplo quechua */}
         {lesson.example_quechua && (
           <div className="bg-quechua-surface border border-quechua-border rounded-2xl px-5 py-5">
