@@ -40,7 +40,7 @@ export function ExercisePage() {
         ? Math.round((newCorrect / exercises.length) * 100)
         : 100
       await completeLesson(id!, user!.id, score)
-      navigate('/inicio')
+      navigate(`/lesson/${id}/resultado`, { state: { score, lessonId: id } })
     } else {
       setCorrectCount(newCorrect)
       setCurrentIndex(nextIndex)
@@ -61,7 +61,7 @@ export function ExercisePage() {
         <div className="flex flex-col items-center gap-4">
           <p className="text-quechua-text-secondary">No hay ejercicios para esta lección.</p>
           <button
-            onClick={async () => { await completeLesson(id!, user!.id, 100); navigate('/inicio') }}
+            onClick={async () => { await completeLesson(id!, user!.id, 100); navigate(`/lesson/${id}/resultado`, { state: { score: 100, lessonId: id } }) }}
             disabled={completing}
             className="h-14 px-8 rounded-2xl bg-quechua-primary text-white font-bold"
           >

@@ -517,94 +517,94 @@ INSERT INTO public.lessons (id, title, description, "order", day_number, topic, 
 INSERT INTO public.exercises (lesson_id, type, "order", content) VALUES
 
 ('a1000001-0000-0000-0000-000000000001', 'choice', 1,
- '{"question": "¿Qué significa ''Napaykullayki''?", "options": ["Hola", "Adiós", "Gracias"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Napaykullayki''?", "options": ["Hola", "Adiós", "Gracias"], "correct_index": 0}'::jsonb),
 
 ('a1000002-0000-0000-0000-000000000002', 'choice', 1,
- '{"question": "¿Cómo se dice ''¿Estás bien?'' en quechua?", "options": ["Allillanchu?", "Sulpayki", "Paqarinkamacha"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''¿Estás bien?'' en quechua?", "options": ["Allillanchu?", "Sulpayki", "Paqarinkamacha"], "correct_index": 0}'::jsonb),
 
 ('a1000003-0000-0000-0000-000000000003', 'choice', 1,
- '{"question": "¿Qué significa ''Allillanmi''?", "options": ["Estoy bien", "Estoy mal", "No sé"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Allillanmi''?", "options": ["Estoy bien", "Estoy mal", "No sé"], "correct_index": 0}'::jsonb),
 
 ('a1000004-0000-0000-0000-000000000004', 'choice', 1,
- '{"question": "¿Qué significa ''Ima sutiykim''?", "options": ["¿Cómo te llamas?", "¿De dónde eres?", "¿Cuántos años tienes?"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Ima sutiykim''?", "options": ["¿Cómo te llamas?", "¿De dónde eres?", "¿Cuántos años tienes?"], "correct_index": 0}'::jsonb),
 
 ('a1000005-0000-0000-0000-000000000005', 'choice', 1,
- '{"question": "¿Qué significa ''Sutiy'' en ''Sutiyqa Mariami''?", "options": ["Mi nombre", "Mi casa", "Mi familia"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Sutiy'' en ''Sutiyqa Mariami''?", "options": ["Mi nombre", "Mi casa", "Mi familia"], "correct_index": 0}'::jsonb),
 
 ('a1000006-0000-0000-0000-000000000006', 'choice', 1,
- '{"question": "¿Cómo se pregunta ''¿De dónde eres?'' en quechua?", "options": ["Maymantam kanki?", "Ima sutiykim?", "Allillanchu?"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se pregunta ''¿De dónde eres?'' en quechua?", "options": ["Maymantam kanki?", "Ima sutiykim?", "Allillanchu?"], "correct_index": 0}'::jsonb),
 
 ('a1000007-0000-0000-0000-000000000007', 'choice', 1,
- '{"question": "¿Cómo se dice ''Soy de Cusco'' en quechua?", "options": ["Qusqumanta kani", "Qusqopi kani", "Qusquta rini"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''Soy de Cusco'' en quechua?", "options": ["Qusqumanta kani", "Qusqopi kani", "Qusquta rini"], "correct_index": 0}'::jsonb),
 
 ('a1000008-0000-0000-0000-000000000008', 'choice', 1,
- '{"question": "¿Qué significa ''Tinkunanchiskama''?", "options": ["Hasta que nos veamos", "Buenas noches", "Hasta mañana"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Tinkunanchiskama''?", "options": ["Hasta que nos veamos", "Buenas noches", "Hasta mañana"], "correct_index": 0}'::jsonb),
 
 ('a1000009-0000-0000-0000-000000000009', 'choice', 1,
- '{"question": "¿Cómo se dice ''Hasta mañana'' en quechua?", "options": ["Paqarinkamacha", "Tinkunanchiskama", "Allillanmi"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''Hasta mañana'' en quechua?", "options": ["Paqarinkamacha", "Tinkunanchiskama", "Allillanmi"], "correct_index": 0}'::jsonb),
 
 ('a1000010-0000-0000-0000-000000000010', 'choice', 1,
- '{"question": "¿Qué significa ''Sulpayki''?", "options": ["Gracias", "Por favor", "Perdón"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Sulpayki''?", "options": ["Gracias", "Por favor", "Perdón"], "correct_index": 0}'::jsonb),
 
 ('a1000011-0000-0000-0000-000000000011', 'choice', 1,
- '{"question": "¿Cómo se dice ''dos'' en quechua?", "options": ["Iskay", "Huk", "Kimsa"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''dos'' en quechua?", "options": ["Iskay", "Huk", "Kimsa"], "correct_index": 0}'::jsonb),
 
 ('a1000012-0000-0000-0000-000000000012', 'choice', 1,
- '{"question": "¿Qué número es ''Pichqa''?", "options": ["Cinco", "Cuatro", "Seis"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué número es ''Pichqa''?", "options": ["Cinco", "Cuatro", "Seis"], "correct_index": 0}'::jsonb),
 
 ('a1000013-0000-0000-0000-000000000013', 'choice', 1,
- '{"question": "¿Cómo se dice ''ocho'' en quechua?", "options": ["Pusaq", "Qanchis", "Isqun"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''ocho'' en quechua?", "options": ["Pusaq", "Qanchis", "Isqun"], "correct_index": 0}'::jsonb),
 
 ('a1000014-0000-0000-0000-000000000014', 'choice', 1,
- '{"question": "¿Qué significa ''Chunka''?", "options": ["Diez", "Cien", "Mil"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Chunka''?", "options": ["Diez", "Cien", "Mil"], "correct_index": 0}'::jsonb),
 
 ('a1000015-0000-0000-0000-000000000015', 'choice', 1,
- '{"question": "¿Cómo se dice ''rojo'' en quechua?", "options": ["Puka", "Qomer", "Yana"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''rojo'' en quechua?", "options": ["Puka", "Qomer", "Yana"], "correct_index": 0}'::jsonb),
 
 ('a1000016-0000-0000-0000-000000000016', 'choice', 1,
- '{"question": "¿Qué significa ''Anqas''?", "options": ["Azul", "Verde", "Amarillo"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Anqas''?", "options": ["Azul", "Verde", "Amarillo"], "correct_index": 0}'::jsonb),
 
 ('a1000017-0000-0000-0000-000000000017', 'choice', 1,
- '{"question": "¿Cómo se dice ''blanco'' en quechua?", "options": ["Yuraq", "Yana", "Oqe"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''blanco'' en quechua?", "options": ["Yuraq", "Yana", "Oqe"], "correct_index": 0}'::jsonb),
 
 ('a1000018-0000-0000-0000-000000000018', 'choice', 1,
- '{"question": "¿Qué significa ''Puñuni tutamanta''?", "options": ["Duermo en la noche", "Como en la mañana", "Camino de tarde"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Puñuni tutamanta''?", "options": ["Duermo en la noche", "Como en la mañana", "Camino de tarde"], "correct_index": 0}'::jsonb),
 
 ('a1000019-0000-0000-0000-000000000019', 'choice', 1,
- '{"question": "¿Qué parte del día es ''Tutamanta''?", "options": ["Mañana", "Tarde", "Noche"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué parte del día es ''Tutamanta''?", "options": ["Mañana", "Tarde", "Noche"], "correct_index": 0}'::jsonb),
 
 ('a1000020-0000-0000-0000-000000000020', 'choice', 1,
- '{"question": "¿Cómo se dice ''noche'' en quechua?", "options": ["Tuta", "Chisintin", "Tutamanta"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''noche'' en quechua?", "options": ["Tuta", "Chisintin", "Tutamanta"], "correct_index": 0}'::jsonb),
 
 ('a1000021-0000-0000-0000-000000000021', 'choice', 1,
- '{"question": "¿Qué significa ''Nuqa''?", "options": ["Yo", "Tú", "Él"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Nuqa''?", "options": ["Yo", "Tú", "Él"], "correct_index": 0}'::jsonb),
 
 ('a1000022-0000-0000-0000-000000000022', 'choice', 1,
- '{"question": "¿Cómo se dice ''tú'' en quechua?", "options": ["Qam", "Nuqa", "Pay"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''tú'' en quechua?", "options": ["Qam", "Nuqa", "Pay"], "correct_index": 0}'::jsonb),
 
 ('a1000023-0000-0000-0000-000000000023', 'choice', 1,
- '{"question": "¿Qué significa ''Pay''?", "options": ["Él / Ella", "Yo", "Nosotros"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Pay''?", "options": ["Él / Ella", "Yo", "Nosotros"], "correct_index": 0}'::jsonb),
 
 ('a1000024-0000-0000-0000-000000000024', 'choice', 1,
- '{"question": "¿Qué significa ''Nuqanchis''?", "options": ["Nosotros (todos)", "Nosotros (sin ti)", "Ustedes"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Nuqanchis''?", "options": ["Nosotros (todos)", "Nosotros (sin ti)", "Ustedes"], "correct_index": 0}'::jsonb),
 
 ('a1000025-0000-0000-0000-000000000025', 'choice', 1,
- '{"question": "¿Cómo se dice ''mi mamá'' en quechua?", "options": ["Mamay", "Taytay", "Panay"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''mi mamá'' en quechua?", "options": ["Mamay", "Taytay", "Panay"], "correct_index": 0}'::jsonb),
 
 ('a1000026-0000-0000-0000-000000000026', 'choice', 1,
- '{"question": "¿Qué significa ''Taytay''?", "options": ["Mi papá", "Mi abuelo", "Mi hermano"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Taytay''?", "options": ["Mi papá", "Mi abuelo", "Mi hermano"], "correct_index": 0}'::jsonb),
 
 ('a1000027-0000-0000-0000-000000000027', 'choice', 1,
- '{"question": "¿Qué significa ''Wawqey''?", "options": ["Mi hermano", "Mi hermana", "Mi hijo"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Wawqey''?", "options": ["Mi hermano", "Mi hermana", "Mi hijo"], "correct_index": 0}'::jsonb),
 
 ('a1000028-0000-0000-0000-000000000028', 'choice', 1,
- '{"question": "¿Cómo dice un hombre ''mi hermana'' en quechua?", "options": ["Panay", "Wawqey", "Churiy"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo dice un hombre ''mi hermana'' en quechua?", "options": ["Panay", "Wawqey", "Churiy"], "correct_index": 0}'::jsonb),
 
 ('a1000029-0000-0000-0000-000000000029', 'choice', 1,
- '{"question": "¿Qué significa ''Wasiy''?", "options": ["Mi casa", "Mi cama", "Mi puerta"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Wasiy''?", "options": ["Mi casa", "Mi cama", "Mi puerta"], "correct_index": 0}'::jsonb),
 
 ('a1000030-0000-0000-0000-000000000030', 'choice', 1,
- '{"question": "¿Cómo se dice ''estoy bien, gracias'' en quechua?", "options": ["Allillanmi, sulpayki", "Allillanchu, sulpayki", "Napaykullayki, sulpayki"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''estoy bien, gracias'' en quechua?", "options": ["Allillanmi, sulpayki", "Allillanchu, sulpayki", "Napaykullayki, sulpayki"], "correct_index": 0}'::jsonb),
 
 
 -- ============================================================
@@ -612,93 +612,93 @@ INSERT INTO public.exercises (lesson_id, type, "order", content) VALUES
 -- ============================================================
 
 ('a1000031-0000-0000-0000-000000000031', 'choice', 1,
- '{"question": "¿Qué significa ''Mikhuni''?", "options": ["Como", "Bebo", "Duermo"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Mikhuni''?", "options": ["Como", "Bebo", "Duermo"], "correct_index": 0}'::jsonb),
 
 ('a1000032-0000-0000-0000-000000000032', 'choice', 1,
- '{"question": "¿Cómo se dice ''bebo'' en quechua?", "options": ["Uqyani", "Mikhuni", "Puñuni"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''bebo'' en quechua?", "options": ["Uqyani", "Mikhuni", "Puñuni"], "correct_index": 0}'::jsonb),
 
 ('a1000033-0000-0000-0000-000000000033', 'choice', 1,
- '{"question": "¿Qué significa ''Puñuni''?", "options": ["Duermo", "Como", "Camino"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Puñuni''?", "options": ["Duermo", "Como", "Camino"], "correct_index": 0}'::jsonb),
 
 ('a1000034-0000-0000-0000-000000000034', 'choice', 1,
- '{"question": "¿Cómo se dice ''voy'' en quechua?", "options": ["Rini", "Hamuni", "Rimani"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''voy'' en quechua?", "options": ["Rini", "Hamuni", "Rimani"], "correct_index": 0}'::jsonb),
 
 ('a1000035-0000-0000-0000-000000000035', 'choice', 1,
- '{"question": "¿Qué significa ''Hamuni''?", "options": ["Vengo", "Voy", "Camino"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Hamuni''?", "options": ["Vengo", "Voy", "Camino"], "correct_index": 0}'::jsonb),
 
 ('a1000036-0000-0000-0000-000000000036', 'choice', 1,
- '{"question": "¿Cómo se dice ''hablo'' en quechua?", "options": ["Rimani", "Yachakuni", "Qawani"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''hablo'' en quechua?", "options": ["Rimani", "Yachakuni", "Qawani"], "correct_index": 0}'::jsonb),
 
 ('a1000037-0000-0000-0000-000000000037', 'choice', 1,
- '{"question": "¿Qué significa ''Qawani''?", "options": ["Veo", "Escucho", "Camino"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Qawani''?", "options": ["Veo", "Escucho", "Camino"], "correct_index": 0}'::jsonb),
 
 ('a1000038-0000-0000-0000-000000000038', 'choice', 1,
- '{"question": "¿Cómo se dice ''aprendo'' en quechua?", "options": ["Yachakuni", "Rimani", "Rini"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''aprendo'' en quechua?", "options": ["Yachakuni", "Rimani", "Rini"], "correct_index": 0}'::jsonb),
 
 ('a1000039-0000-0000-0000-000000000039', 'choice', 1,
- '{"question": "¿Qué significa ''Tanta''?", "options": ["Pan", "Maíz", "Papa"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Tanta''?", "options": ["Pan", "Maíz", "Papa"], "correct_index": 0}'::jsonb),
 
 ('a1000040-0000-0000-0000-000000000040', 'choice', 1,
- '{"question": "¿Cómo se dice ''agua'' en quechua?", "options": ["Yaku", "Api", "Sara"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''agua'' en quechua?", "options": ["Yaku", "Api", "Sara"], "correct_index": 0}'::jsonb),
 
 ('a1000041-0000-0000-0000-000000000041', 'choice', 1,
- '{"question": "¿Qué significa ''Sara''?", "options": ["Maíz", "Papa", "Pan"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Sara''?", "options": ["Maíz", "Papa", "Pan"], "correct_index": 0}'::jsonb),
 
 ('a1000042-0000-0000-0000-000000000042', 'choice', 1,
- '{"question": "¿Cómo se dice ''papa'' (tubérculo) en quechua?", "options": ["Papa", "Tanta", "Sara"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''papa'' (tubérculo) en quechua?", "options": ["Papa", "Tanta", "Sara"], "correct_index": 0}'::jsonb),
 
 ('a1000043-0000-0000-0000-000000000043', 'choice', 1,
- '{"question": "¿Qué significa ''Inti''?", "options": ["Sol", "Luna", "Estrella"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Inti''?", "options": ["Sol", "Luna", "Estrella"], "correct_index": 0}'::jsonb),
 
 ('a1000044-0000-0000-0000-000000000044', 'choice', 1,
- '{"question": "¿Cómo se dice ''luna'' en quechua?", "options": ["Killa", "Inti", "Quyllur"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''luna'' en quechua?", "options": ["Killa", "Inti", "Quyllur"], "correct_index": 0}'::jsonb),
 
 ('a1000045-0000-0000-0000-000000000045', 'choice', 1,
- '{"question": "¿Qué significa ''Pacha''?", "options": ["Tierra / mundo / tiempo", "Agua", "Fuego"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Pacha''?", "options": ["Tierra / mundo / tiempo", "Agua", "Fuego"], "correct_index": 0}'::jsonb),
 
 ('a1000046-0000-0000-0000-000000000046', 'choice', 1,
- '{"question": "¿Cómo se dice ''río'' en quechua?", "options": ["Mayu", "Urqu", "Pacha"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''río'' en quechua?", "options": ["Mayu", "Urqu", "Pacha"], "correct_index": 0}'::jsonb),
 
 ('a1000047-0000-0000-0000-000000000047', 'choice', 1,
- '{"question": "¿Qué significa ''Urqu''?", "options": ["Cerro / montaña", "Río", "Valle"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Urqu''?", "options": ["Cerro / montaña", "Río", "Valle"], "correct_index": 0}'::jsonb),
 
 ('a1000048-0000-0000-0000-000000000048', 'choice', 1,
- '{"question": "¿Cómo se dice ''llama'' (animal) en quechua?", "options": ["Llama", "Kuntur", "Atuq"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''llama'' (animal) en quechua?", "options": ["Llama", "Kuntur", "Atuq"], "correct_index": 0}'::jsonb),
 
 ('a1000049-0000-0000-0000-000000000049', 'choice', 1,
- '{"question": "¿Qué significa ''Kuntur''?", "options": ["Cóndor", "Llama", "Puma"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Kuntur''?", "options": ["Cóndor", "Llama", "Puma"], "correct_index": 0}'::jsonb),
 
 ('a1000050-0000-0000-0000-000000000050', 'choice', 1,
- '{"question": "¿Qué significa ''Qawani intita, uqyani yakuta''?", "options": ["Veo el sol, bebo agua", "Veo el agua, bebo el sol", "Como el sol, duermo agua"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Qawani intita, uqyani yakuta''?", "options": ["Veo el sol, bebo agua", "Veo el agua, bebo el sol", "Como el sol, duermo agua"], "correct_index": 0}'::jsonb),
 
 ('a1000051-0000-0000-0000-000000000051', 'choice', 1,
- '{"question": "¿Qué significa ''Uma''?", "options": ["Cabeza", "Mano", "Pie"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Uma''?", "options": ["Cabeza", "Mano", "Pie"], "correct_index": 0}'::jsonb),
 
 ('a1000052-0000-0000-0000-000000000052', 'choice', 1,
- '{"question": "¿Cómo se dice ''boca'' en quechua?", "options": ["Simi", "Ñawi", "Rinri"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''boca'' en quechua?", "options": ["Simi", "Ñawi", "Rinri"], "correct_index": 0}'::jsonb),
 
 ('a1000053-0000-0000-0000-000000000053', 'choice', 1,
- '{"question": "¿Qué significa ''Ñawi''?", "options": ["Ojo", "Oreja", "Nariz"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Ñawi''?", "options": ["Ojo", "Oreja", "Nariz"], "correct_index": 0}'::jsonb),
 
 ('a1000054-0000-0000-0000-000000000054', 'choice', 1,
- '{"question": "¿Cómo se dice ''oreja'' en quechua?", "options": ["Rinri", "Simi", "Uma"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''oreja'' en quechua?", "options": ["Rinri", "Simi", "Uma"], "correct_index": 0}'::jsonb),
 
 ('a1000055-0000-0000-0000-000000000055', 'choice', 1,
- '{"question": "¿Qué significa ''Makiy''?", "options": ["Mi mano", "Mi pie", "Mi brazo"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Makiy''?", "options": ["Mi mano", "Mi pie", "Mi brazo"], "correct_index": 0}'::jsonb),
 
 ('a1000056-0000-0000-0000-000000000056', 'choice', 1,
- '{"question": "¿Cómo se dice ''mi pie'' en quechua?", "options": ["Chakiy", "Makiy", "Uma"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''mi pie'' en quechua?", "options": ["Chakiy", "Makiy", "Uma"], "correct_index": 0}'::jsonb),
 
 ('a1000057-0000-0000-0000-000000000057', 'choice', 1,
- '{"question": "¿Qué significa ''Kusikuni''?", "options": ["Estoy alegre", "Estoy triste", "Estoy cansado"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Kusikuni''?", "options": ["Estoy alegre", "Estoy triste", "Estoy cansado"], "correct_index": 0}'::jsonb),
 
 ('a1000058-0000-0000-0000-000000000058', 'choice', 1,
- '{"question": "¿Cómo se dice ''estoy triste'' en quechua?", "options": ["Llakikuni", "Kusikuni", "Manchakuni"], "correct": 0}'::jsonb),
+ '{"question": "¿Cómo se dice ''estoy triste'' en quechua?", "options": ["Llakikuni", "Kusikuni", "Manchakuni"], "correct_index": 0}'::jsonb),
 
 ('a1000059-0000-0000-0000-000000000059', 'choice', 1,
- '{"question": "¿Qué significa ''Munakuni''?", "options": ["Quiero / Amo", "Odio", "Temo"], "correct": 0}'::jsonb),
+ '{"question": "¿Qué significa ''Munakuni''?", "options": ["Quiero / Amo", "Odio", "Temo"], "correct_index": 0}'::jsonb),
 
 ('a1000060-0000-0000-0000-000000000060', 'choice', 1,
- '{"question": "¿Qué significa ''Runasimita yachakuni''?", "options": ["Aprendo quechua", "Hablo quechua", "Enseño quechua"], "correct": 0}'::jsonb);
+ '{"question": "¿Qué significa ''Runasimita yachakuni''?", "options": ["Aprendo quechua", "Hablo quechua", "Enseño quechua"], "correct_index": 0}'::jsonb);
 
 COMMIT;
