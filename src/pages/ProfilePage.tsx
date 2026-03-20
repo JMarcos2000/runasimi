@@ -15,17 +15,19 @@ export function ProfilePage() {
 
   return (
     <Layout>
-      <h1 className="text-2xl font-bold text-gray-800 mb-6">Mi perfil</h1>
+      <h1 className="text-2xl font-bold text-quechua-text-primary mb-6">Mi perfil</h1>
 
       <Card className="max-w-md">
         <div className="flex items-center gap-4">
-          <div className="w-16 h-16 rounded-full bg-violet-100 flex items-center justify-center text-3xl">
-            👤
+          <div className="w-16 h-16 rounded-full bg-quechua-surface border border-quechua-border flex items-center justify-center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-quechua-primary">
+              <circle cx="12" cy="8" r="4" /><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+            </svg>
           </div>
           <div>
-            <p className="font-semibold text-gray-800">{user?.email}</p>
+            <p className="font-semibold text-quechua-text-primary">{user?.email}</p>
             {createdAt && (
-              <p className="text-sm text-gray-500">Miembro desde {createdAt}</p>
+              <p className="text-sm text-quechua-text-secondary">Miembro desde {createdAt}</p>
             )}
           </div>
         </div>
