@@ -21,4 +21,4 @@
 
 ## 4. Mejora de UI
 
-- [ ] 4.1 Revisar y mejorar el diseño visual de la pantalla Inicio
+- [x] 4.1 Revisar y mejorar el diseño visual de la pantalla Inicio
