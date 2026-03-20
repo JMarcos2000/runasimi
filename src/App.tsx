@@ -4,6 +4,8 @@ import { RegisterPage } from './pages/RegisterPage'
 import { InicioPage } from './pages/InicioPage'
 import { LessonPage } from './pages/LessonPage'
 import { ExercisePage } from './pages/ExercisePage'
+import { LessonResultPage } from './pages/LessonResultPage'
+import { RepasoPage } from './pages/RepasoPage'
 import { ProfilePage } from './pages/ProfilePage'
 import { ProtectedRoute } from './components/ProtectedRoute'
 
@@ -34,6 +36,22 @@ function App() {
           element={
             <ProtectedRoute>
               <ExercisePage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/lesson/:id/resultado"
+          element={
+            <ProtectedRoute>
+              <LessonResultPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/repaso"
+          element={
+            <ProtectedRoute>
+              <RepasoPage />
             </ProtectedRoute>
           }
         />
