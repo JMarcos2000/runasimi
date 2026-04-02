@@ -5,7 +5,9 @@ import { useAuth } from '../hooks/useAuth'
 import { useLessonComplete } from '../hooks/useLessonComplete'
 import { MultipleChoice } from '../components/exercises/MultipleChoice'
 import { TextInputExercise } from '../components/exercises/TextInputExercise'
-import type { Exercise, ChoiceContent, TextInputContent } from '../types'
+import { AudioPlayer } from '../components/exercises/AudioPlayer'
+import { VideoPlayer } from '../components/exercises/VideoPlayer'
+import type { Exercise, ChoiceContent, TextInputContent, AudioContent, VideoContent } from '../types'
 
 export function ExercisePage() {
   const { id } = useParams<{ id: string }>()
@@ -129,19 +131,31 @@ export function ExercisePage() {
           )
         })()}
 
-        {exercise.type !== 'choice' && exercise.type !== 'text_input' && (
-          <div className="flex flex-col items-center gap-4 pt-8">
-            <p className="text-quechua-text-secondary text-center">
-              Tipo de ejercicio no soportado aún.
-            </p>
-            <button
-              onClick={() => handleNext(true)}
-              className="h-14 px-8 rounded-2xl bg-quechua-primary text-white font-bold"
-            >
-              Continuar
-            </button>
-          </div>
-        )}
+        {exercise.type === 'audio' && (() => {
+          const content = exercise.content as AudioContent
+          return (
+            <AudioPlayer
+              key={currentIndex}
+              word={content.word}
+              audio_url={content.audio_url}
+              question={content.question}
+              onNext={handleNext}
+            />
+          )
+        })()}
+
+        {exercise.type === 'video' && (() => {
+          const content = exercise.content as VideoContent
+          return (
+            <VideoPlayer
+              key={currentIndex}
+              video_url={content.video_url}
+              duration_seconds={content.duration_seconds}
+              caption={content.caption}
+              onNext={handleNext}
+            />
+          )
+        })()}
       </div>
     </div>
   )

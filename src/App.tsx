@@ -7,6 +7,8 @@ import { ExercisePage } from './pages/ExercisePage'
 import { LessonResultPage } from './pages/LessonResultPage'
 import { RepasoPage } from './pages/RepasoPage'
 import { ProfilePage } from './pages/ProfilePage'
+import { OnboardingPage } from './pages/OnboardingPage'
+import { CommunityPage } from './pages/CommunityPage'
 import { ProtectedRoute } from './components/ProtectedRoute'
 
 function App() {
@@ -60,6 +62,22 @@ function App() {
           element={
             <ProtectedRoute>
               <ProfilePage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/community"
+          element={
+            <ProtectedRoute>
+              <CommunityPage />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/onboarding/sobre-el-quechua"
+          element={
+            <ProtectedRoute>
+              <OnboardingPage />
             </ProtectedRoute>
           }
         />

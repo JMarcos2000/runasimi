@@ -22,6 +22,9 @@ export function Navbar() {
           <Link to="/inicio" className="text-sm text-quechua-text-secondary hover:text-quechua-primary">
             Inicio
           </Link>
+          <Link to="/community" className="text-sm text-quechua-text-secondary hover:text-quechua-primary">
+            Comunidad
+          </Link>
           <Link to="/profile" className="text-sm text-quechua-text-secondary hover:text-quechua-primary">
             Perfil
           </Link>

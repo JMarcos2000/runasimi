@@ -1,11 +1,27 @@
+import { useEffect } from 'react'
 import { useAuth } from '../hooks/useAuth'
 import { useInicioData } from '../hooks/useInicioData'
 import { useNavigate } from 'react-router-dom'
+import { supabase } from '../lib/supabase'
 
 export function InicioPage() {
   const { user } = useAuth()
   const { streak, completedCount, totalLessons, currentDayLesson, loading } = useInicioData()
   const navigate = useNavigate()
+
+  useEffect(() => {
+    if (!user) return
+    supabase
+      .from('profiles')
+      .select('onboarding_completed')
+      .eq('id', user.id)
+      .maybeSingle()
+      .then(({ data }) => {
+        if (data && !data.onboarding_completed) {
+          navigate('/onboarding/sobre-el-quechua', { replace: true })
+        }
+      })
+  }, [user, navigate])
 
   const username = user?.user_metadata?.username || user?.email?.split('@')[0] || 'Estudiante'
   const currentDay = completedCount + 1
