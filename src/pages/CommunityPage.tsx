@@ -63,10 +63,10 @@ export function CommunityPage() {
         .maybeSingle(),
     ])
 
-    const topStreaks = (streakRes.data ?? []) as Array<{
+    const topStreaks = (streakRes.data ?? []) as unknown as Array<{
       user_id: string
       current_streak: number
-      profiles: { username: string } | null
+      profiles: { username: string } | { username: string }[] | null
     }>
 
     const allHearts = heartsRes.data ?? []
@@ -79,7 +79,7 @@ export function CommunityPage() {
 
     const entries: RankingEntry[] = topStreaks.map((row) => ({
       userId: row.user_id,
-      username: row.profiles?.username ?? 'Usuario',
+      username: (Array.isArray(row.profiles) ? row.profiles[0]?.username : row.profiles?.username) ?? 'Usuario',
       streak: row.current_streak,
       hearts: heartCountMap[row.user_id] ?? 0,
       isCurrentUser: row.user_id === user.id,
